@@ -30,4 +30,4 @@ const newFormHandler = async (event) => {
   }
 };
 
-document.querySelector(".addGigs").addEventListener("submit", newFormHandler);
+document.querySelector(".addGig").addEventListener("submit", newFormHandler);

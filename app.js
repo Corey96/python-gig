@@ -31,6 +31,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 app.get("/", (req, res) => res.send("INDEX"));
 
-db.sync({ force: true }).then(() => {
+db.sync({ force: false }).then(() => {
   app.listen(PORT, console.log(`Server Started on port ${PORT}`));
 });
